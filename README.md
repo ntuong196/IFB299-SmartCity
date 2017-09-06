@@ -3,8 +3,8 @@
 ### Database and User Details
 
 'ENGINE': 'django.db.backends.mysql'
-'NAME': 'firstsite'
-'USER': 'mysiteuser'
-'PASSWORD': 'password'
+'NAME': 'smartcity'
+'USER': 'team98'
+'PASSWORD': 'team98'
 'HOST': 'localhost'
 'PORT': '3306'
