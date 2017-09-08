@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Register</h2>
+    <form method="POST">
+        <p>Username: <br>
+            <input type="text"></p>
+        
+        <p>Password:<br>
+            <input type="password"> </p>
+            
+        <p>Re-enter Password:<br>
+            <input type="password"> </p>
+            
+        <p>User type:<br>
+            <select>
+                <option value="student">Student</option>
+                <option value="tourist">Tourist</option>
+                <option value="businessman">Businessman</option>
+            </select>
+            
+        <p><button type="submit">Login</button></p>
+    </form>
+
+    <a href="/login">Already registered? Click here.</a>
+{% endblock %}
