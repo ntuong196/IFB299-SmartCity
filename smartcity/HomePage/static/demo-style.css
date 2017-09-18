@@ -1,0 +1,32 @@
+body > * {
+  background-size: cover; }
+
+.opaque-overlay {
+  overflow: hidden;
+  position: relative; }
+  .opaque-overlay > *:first-child:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    pointer-events: none;
+    background: rgba(93, 149, 198, 0.25); }
+
+.gradient-overlay {
+  overflow: hidden;
+  position: relative; }
+  .gradient-overlay > *:first-child:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    pointer-events: none;
+    background: linear-gradient(to top, #5D95C6 0%, transparent 100%); }
+
+/*# sourceMappingURL=demo-style.css.map */

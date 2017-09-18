@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'login'
+#    'HomePage'
 ]
 
 MIDDLEWARE = [
@@ -78,8 +79,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'smartcity',
-		'USER': 'team98',
-		'PASSWORD': 'team98',
+		'USER': 'root',
+		'PASSWORD': 'toor',
 		'HOST': 'localhost',
 		'PORT': '3306',
     }
