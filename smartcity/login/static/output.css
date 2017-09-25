@@ -1,0 +1,61 @@
+body > * {
+  background-size: cover;
+	}
+.navbar {
+	background-color: #1b486b;
+}
+
+.py-5 {
+	background-color: #343a40;
+	min-height:60px;
+}
+
+.background {
+	height: 90%;
+	overflow:none;
+}
+
+.card {
+	background-color: #1b486b;
+	padding: 20px;
+	border-radius: 15px;
+	color: white;
+}
+
+.btn {
+	background-color: #868e96
+	
+}
+#copyright {
+	color: #868e96;
+}
+
+.opaque-overlay {
+  overflow: hidden;
+  position: relative; }
+  .opaque-overlay > *:first-child:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    pointer-events: none;
+    background: rgba(52, 58, 64, 0.25); }
+
+.gradient-overlay {
+  overflow: hidden;
+  position: relative; }
+  .gradient-overlay > *:first-child:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    pointer-events: none;
+    background: linear-gradient(to top, #343a40 0%, transparent 100%); }
+
+/*# sourceMappingURL=output.css.map */
