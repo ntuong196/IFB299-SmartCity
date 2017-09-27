@@ -1,0 +1,14 @@
+Details for the AWS Ubuntu server
+
+IP: 54.252.159.211
+User: ubuntu
+
+For Putty use the IFB299_Project.ppk file
+The passphrase for that is: IFB299Team98
+
+If you want to connect to the database with your MySQL Workbench use the IFB299.pem file
+There is no passphase for that.
+
+MySQL root user's password is: IFB299_Project
+
+Please edit the file if you create other users for the database
