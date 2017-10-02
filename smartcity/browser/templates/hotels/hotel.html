@@ -1,0 +1,9 @@
+<h1>{{ hotel.name }}</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<ul>
+  <li><strong>Address:</strong> {{ hotel.address }}</li>
+  <li><strong>Phone:</strong> {{ hotel.phone }}</li>
+  <li><strong>Email:</strong> {{ hotel.email }}</li>
+</ul>
