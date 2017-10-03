@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'browser',
     'login',
     'HomePage',
 ]
@@ -80,7 +81,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'smartcity',
 		'USER': 'root',
-		'PASSWORD': 'toor',
+		'PASSWORD': 'password',
 		'HOST': 'localhost',
 		'PORT': '3306',
     }

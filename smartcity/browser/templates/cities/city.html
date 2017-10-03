@@ -1,0 +1,85 @@
+<h1>{{ city.name }}</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+
+<h2>Parks:</h2>
+{% if city.has_parks %}
+  {% for park in city.park_set.all %}
+      <h4>{{ park.name }}</h4>
+        <ul>
+          <li><strong>Address:</strong> {{ park.address }}</li>
+          <li><strong>Phone:</strong> {{ park.phone }}</li>
+          <li><strong>Email:</strong> {{ park.email }}</li>
+        </ul>
+  {% endfor %}
+{% else %}
+  <p>We have no data on {{city.name}} parks yet, sorry!</p>
+{% endif %}
+
+
+<h2>Zoos:</h2>
+{% if city.has_zoos %}
+  {% for zoo in city.zoo_set.all %}
+      <h4>{{ zoo.name }}</h4>
+        <ul>
+          <li><strong>Address:</strong> {{ zoo.address }}</li>
+          <li><strong>Phone:</strong> {{ zoo.phone }}</li>
+          <li><strong>Email:</strong> {{ zoo.email }}</li>
+        </ul>
+  {% endfor %}
+{% else %}
+  <p>We have no data on {{city.name}} zoos yet, sorry!</p>
+{% endif %}
+
+
+<h2>Museums:</h2>
+{% if city.has_museums %}
+  {% for museum in city.museum_set.all %}
+      <h4>{{ museum.name }}</h4>
+        <ul>
+          <li><strong>Address:</strong> {{ museum.address }}</li>
+          <li><strong>Phone:</strong> {{ museum.phone }}</li>
+          <li><strong>Email:</strong> {{ museum.email }}</li>
+        </ul>
+  {% endfor %}
+{% else %}
+  <p>We have no data on {{city.name}} museums yet, sorry!</p>
+{% endif %}
+
+
+<h2>Malls:</h2>
+{% if city.has_malls %}
+  {% for mall in city.mall_set.all %}
+      <h4>{{ mall.name }}</h4>
+        <ul>
+          <li><strong>Address:</strong> {{ mall.address }}</li>
+          <li><strong>Phone:</strong> {{ mall.phone }}</li>
+          <li><strong>Email:</strong> {{ mall.email }}</li>
+        </ul>
+  {% endfor %}
+{% else %}
+  <p>We have no data on {{city.name}} malls yet, sorry!</p>
+{% endif %}
+
+
+<h2>Restaurants:</h2>
+{% if city.has_restaurants %}
+  {% for restaurant in city.restaurant_set.all %}
+      <h4>{{ restaurant.name }}</h4>
+        <ul>
+          <li><strong>Address:</strong> {{ restaurant.address }}</li>
+          <li><strong>Phone:</strong> {{ restaurant.phone }}</li>
+          <li><strong>Email:</strong> {{ restaurant.email }}</li>
+        </ul>
+  {% endfor %}
+{% else %}
+  <p>We have no data on {{city.name}} restaurants yet, sorry!</p>
+{% endif %}
+
+<h2>Map:</h2>
+{% if city.has_map %}
+  <p>{{city.map}}
+{% else %}
+  <p>We have no data on {{city.name}} restaurants yet, sorry!</p>
+{% endif %}
