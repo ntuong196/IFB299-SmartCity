@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Name</title>
+</head>
+<body>
+<h1>{{ entity.entity_name }}</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="{% url 'polls:vote' entity.id %}" method="post">
+{% csrf_token %}
+{% for element in entity.element_set.all %}
+    <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ element.id }}" />
+    <label for="element{{ forloop.counter }}">{{ element.element_name }}</label><br/>
+{% endfor %}
+<input type="submit" value="Rating" />
+</form>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomePage</title>
+</head>
+<body>
+{% if latest_entity_list %}
+    <ul>
+    {% for entity in latest_entity_list %}
+        <li><a href="/homepage/{{ entity.id }}/">{{ entity.entity_name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Entity are available.</p>
+{% endif %}
+</body>
+</html>

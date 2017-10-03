@@ -23,14 +23,14 @@ class Entity(models.Model):
 
 class Element(models.Model):
    entity = models.ForeignKey(Entity, on_delete=models.CASCADE)
-   element_name = models.CharField(max_length=200,default=True)
-   element_address = models.CharField(max_length=200,blank=True, null =True)
+   element_name = models.CharField(max_length=200)
+   element_address = models.CharField(max_length=200)
    phone_regex = RegexValidator(regex=r'^\+?1?\d{9,15}$', message = ("Must have format: '+999999999'. 15 digits allowed. + is optional"))
-   element_phone =models.CharField(validators=[phone_regex], max_length=15, null =True, blank=True)
-   element_email = models.EmailField(max_length=200,blank=True, null =True)
-   element_department = models.CharField(max_length=200,blank=True, null =True)
-   element_industry_type = models.CharField(max_length=200,blank=True, null = True)
-   rating = models.IntegerField(default=0)
+   element_phone =models.CharField(validators=[phone_regex], max_length=15)
+   element_email = models.EmailField(max_length=200)
+   element_department = models.CharField(max_length=200)
+   element_industry_type = models.CharField(max_length=200)
+   rating = models.IntegerField(default=0, max_length=5)
 
    def __str__(self):
        return self.element_name
