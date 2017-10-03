@@ -15,7 +15,7 @@ def signin(request):
             if user.is_superuser:
                 return redirect('/admin')
             else:
-                return redirect('register')
+                return redirect('/browser')
     else:
         form = AuthenticationForm(request)
     return render(request, 'login/login.html', {'form': form})
@@ -59,22 +59,3 @@ def resetpassword(request):
     else:
         form = ResetForm()
     return render(request, 'login/resetpassword.html', {'form': form})
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
