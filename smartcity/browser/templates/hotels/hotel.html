@@ -1,3 +1,6 @@
+{% extends 'browser_base.html' %}
+{% block content %}
+
 <h1>{{ hotel.name }}</h1>
 
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
@@ -7,3 +10,5 @@
   <li><strong>Phone:</strong> {{ hotel.phone }}</li>
   <li><strong>Email:</strong> {{ hotel.email }}</li>
 </ul>
+
+{% endblock %}
