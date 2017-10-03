@@ -16,12 +16,12 @@ class IndexView(generic.ListView):
         return Entity.objects.order_by('-pub_date')[:5]
 
 
-class DetailView(generic.DetailView):
+class ElementView(generic.DetailView):
     model = Entity
     template_name = 'HomePage/detail.html'
 
 
-class ResultsView(generic.DetailView):
+class RatingView(generic.DetailView):
     model = Entity
     template_name = 'HomePage/results.html'
 

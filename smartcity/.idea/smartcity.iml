@@ -19,7 +19,7 @@
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
     <option name="TEMPLATE_FOLDERS">
       <list>
-        <option value="$MODULE_DIR$/smartcity/templates" />
+        <option value="$MODULE_DIR$/browser/templates" />
       </list>
     </option>
   </component>
