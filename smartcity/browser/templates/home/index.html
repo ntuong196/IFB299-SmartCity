@@ -1,75 +1,76 @@
+{% extends 'browser_base.html' %}
+{% block content %}
 {% load static %}
 {% load user_tags %}
 
 <link rel="stylesheet" type="text/css" href="{% static 'browser/style.css' %}" />
 
-<a href="{% url 'browser:logout' %}">Logout</a>
+<div class="container">
+  <div class="row col-md-12">
+    {% if request.user|has_group:"Student" or request.user|has_group:"Businessman" or request.user|has_group:"Tourist"%}
+      {% if cities %}
+        <div class="col-md-4 p-4">
+          <img class="browser-img" src="https://pbs.twimg.com/profile_images/721694841617297408/lqb-5CME_400x400.jpg">
+          <h4>Cities</h4>
+          <ul>
+          {% for city in cities %}
+              <li><a href="{% url 'browser:city' city.id %}">{{ city.name }}</a></li>
+          {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+    {% endif %}
 
-<h1>Smart City</h1>
-<p>Welcome to the Smart industry website!</p>
-<p>Select from the available options below for more information about that place!</p>
+    {% if request.user|has_group:"Businessman" or request.user|has_group:"Tourist"%}
+      {% if hotels %}
+        <div class="col-md-4 p-4">
+          <img class="browser-img" src="http://irantrippers.com/images/thumbs/venus-hotel.jpg">
+          <h4>Hotels</h4>
+          <ul>
+          {% for hotel in hotels %}
+              <li><a href="{% url 'browser:hotel' hotel.id %}">{{ hotel.name }}</a></li>
+          {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+    {% endif %}
 
-{% if request.user|has_group:"Student" or request.user|has_group:"Businessman" or request.user|has_group:"Tourist"%}
-  {% if cities %}
-     <h3>Cities</h3>
-     <ul>
-     {% for city in cities %}
-         <li><a href="{% url 'browser:city' city.id %}">{{ city.name }}</a></li>
-     {% endfor %}
-     </ul>
-  {% else %}
-     <p>No cities are available.</p>
-  {% endif %}
-{% endif %}
+    {% if request.user|has_group:"Businessman" and industries%}
+      <div class="col-md-4 p-4">
+        <img class="browser-img" src="https://www.resources-game.ch/images/appimages/res33.png">
+         <h4>Industries</h4>
+         <ul class="p-1">
+         {% for industry in industries %}
+             <li><a href="{% url 'browser:industry' industry.id %}">{{ industry.name }}</a></li>
+         {% endfor %}
+         </ul>
+      </div>
+    {% endif %}
 
-{% if request.user|has_group:"Businessman" or request.user|has_group:"Tourist"%}
-  {% if hotels %}
-     <h3>Hotels</h3>
-     <ul>
-     {% for hotel in hotels %}
-         <li><a href="{% url 'browser:hotel' hotel.id %}">{{ hotel.name }}</a></li>
-     {% endfor %}
-     </ul>
-  {% else %}
-     <p>No hotels are available.</p>
-  {% endif %}
-{% endif %}
+    {% if request.user|has_group:"Student" and libraries %}
+      <div class="col-md-4 p-4">
+        <img class="browser-img" src="https://pbs.twimg.com/profile_images/378800000012599278/c76742f5fe774e5132faa78cf5b0af18.jpeg">
+        <h4>Libaries</h4>
+        <ul>
+        {% for library in libraries %}
+            <li><a href="{% url 'browser:library' library.id %}">{{ library.name }}</a></li>
+        {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
 
-{% if request.user|has_group:"Businessman" %}
-  {% if industries %}
-     <h3>Industries</h3>
-     <ul>
-     {% for industry in industries %}
-         <li><a href="{% url 'browser:industry' industry.id %}">{{ industry.name }}</a></li>
-     {% endfor %}
-     </ul>
-  {% else %}
-     <p>No industries are available.</p>
-  {% endif %}
-{% endif %}
+    {% if request.user|has_group:"Student" and colleges %}
+      <div class="col-md-4 p-4">
+        <img class="browser-img" src="https://www.usnews.com/img/college-photo_33191_256x256mm.jpg">
+        <h4>Colleges</h4>
+        <ul>
+        {% for college in colleges %}
+            <li><a href="{% url 'browser:college' college.id %}">{{ college.name }}</a></li>
+        {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+  </div>
+</div>
 
-{% if request.user|has_group:"Student" %}
-  {% if libraries %}
-     <h3>Libaries</h3>
-     <ul>
-     {% for library in libraries %}
-         <li><a href="{% url 'browser:library' library.id %}">{{ library.name }}</a></li>
-     {% endfor %}
-     </ul>
-  {% else %}
-     <p>No libraries are available.</p>
-  {% endif %}
-{% endif %}
-
-{% if request.user|has_group:"Student" %}
-  {% if colleges %}
-     <h3>Colleges</h3>
-     <ul>
-     {% for college in colleges %}
-         <li><a href="{% url 'browser:college' college.id %}">{{ college.name }}</a></li>
-     {% endfor %}
-     </ul>
-  {% else %}
-     <p>No colleges are available.</p>
-  {% endif %}
-{% endif %}
+{% endblock %}
