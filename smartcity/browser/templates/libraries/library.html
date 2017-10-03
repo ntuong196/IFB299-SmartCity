@@ -1,0 +1,14 @@
+{% extends 'browser_base.html' %}
+{% block content %}
+
+<h1>{{ library.name }}</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<ul>
+  <li><strong>Address:</strong> {{ library.address }}</li>
+  <li><strong>Phone:</strong> {{ library.phone }}</li>
+  <li><strong>Email:</strong> {{ library.email }}</li>
+</ul>
+
+{% endblock %}

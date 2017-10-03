@@ -1,3 +1,6 @@
+{% extends 'browser_base.html' %}
+{% block content %}
+
 <h1>{{ city.name }}</h1>
 
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
@@ -83,3 +86,6 @@
 {% else %}
   <p>We have no data on {{city.name}} restaurants yet, sorry!</p>
 {% endif %}
+
+
+{% endblock %}
