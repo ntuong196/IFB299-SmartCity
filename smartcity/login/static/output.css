@@ -3,7 +3,7 @@ body > * {
 }
 
 .navbar {
-	background-color: #1b486b;
+	background-color: #10AFF0;
 }
 
 .py-5 {
@@ -29,11 +29,6 @@ body > * {
 
 .browser-img {
   border-radius: 50%;
-}
-
-.btn {
-	background-color: #868e96
-
 }
 #copyright {
 	color: #868e96;

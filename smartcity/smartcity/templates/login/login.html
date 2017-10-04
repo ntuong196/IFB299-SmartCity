@@ -1,32 +1,67 @@
 {% extends 'base.html' %}
 {% block content %}
 
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <div class="col-md-12 text-white" >
+      <img src="https://sisu.ut.ee/sites/default/files/doktorikool.midok/files/smart_city_text.png" style=" height: 100%; width: 100%; object-fit: contain;">
+    </div>
+
+  
+  <!-- ADD FORM -->
 
 {{ form.errors }}
 {{ form.non_field_errors }}
- 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6" style=""> </div>
-        <div class="col-md-6" style="">
-          <div class="card p-5">
-            <div class="card-body">
-              <h1 class="mb-4">Login</h1>
-              <form method="post">
-                <div class="form-group"> 
-                {% csrf_token %}
-				{{ form.as_p }}
-				</div>
-                <button type="submit" class="btn">Login</button>
-              </form>
-			  
-			  <a href="/login/register">Not registered? Click here.</a><br>
-			  <a href="/login/reset">Forgotten your password?</a>
-            </div>
+    <div id="login-overlay" class="modal-dialog" >
+      <div class="">
+          
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title" id="myModalLabel">Login to smartcityau.pythonanywhere.com</h4>
           </div>
-        </div>
+
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-xs-6">
+                      <div class="well">
+                          <form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
+                              <div class="form-group">
+                                  {% csrf_token %}
+                                  {{ form.as_p }}
+                                  
+                              </div>
+                              
+                              <div class="checkbox">
+                                  <label>
+                                      <input type="checkbox" name="remember" id="remember"> Remember login
+                                  </label>
+                                  <p class="help-block">(For private computer)</p>
+                              </div>
+
+                              
+
+                              <button type="submit" class="btn btn-success btn-block">Login</button>
+                              <a href="/login/reset" class="btn btn-default btn-block">Forgot Password?</a>
+                          </form>
+                      </div>
+                  </div>
+                  <div class="col-xs-6">
+                      <p class="lead">Register now for <span class="text-success">FREE</span></p>
+                      <ul class="list-unstyled" style="line-height: 2">
+                          <li><span class="fa fa-check text-success"></span> City information</li>
+                          <li><span class="fa fa-check text-success"></span> Businesses and Industries</li>
+                          <li><span class="fa fa-check text-success"></span> Colleges and Libraries</li>
+                          <li><span class="fa fa-check text-success"></span> Hotel and Mall</li>
+                          <li><span class="fa fa-check text-success"></span> Zoo and Museum</li>
+                          <li><a href="#"><u>And more...</u></a></li>
+                      </ul>
+                      <p><a href="/login/register" class="btn btn-info btn-block">Yes please, register now!</a></p>
+                  </div>
+              </div>
+          </div>
       </div>
+  </div>
 
-</div>
 
-  {% endblock %}
+
+{% endblock %}

@@ -2,24 +2,188 @@
 {% block content %}
 {% load static %}
 {% load user_tags %}
-
+<!-- 
 <link rel="stylesheet" type="text/css" href="{% static 'browser/style.css' %}" />
+ -->
+ 
 
 <div class="container">
   <div class="row col-md-12">
-    {% if request.user|has_group:"Student" or request.user|has_group:"Businessman" or request.user|has_group:"Tourist"%}
+    {% if request.user|has_group:"Tourist" %}
       {% if cities %}
-        <div class="col-md-4 p-4">
-          <img class="browser-img" src="https://pbs.twimg.com/profile_images/721694841617297408/lqb-5CME_400x400.jpg">
-          <h4>Cities</h4>
-          <ul>
-          {% for city in cities %}
-              <li><a href="{% url 'browser:city' city.id %}">{{ city.name }}</a></li>
-          {% endfor %}
-          </ul>
+        <div class=" text-center opaque-overlay" >
+          <style type="text/css">
+          .btn3d {
+          transition:all .08s linear;
+          position:relative;
+          outline:medium none;
+          -moz-outline-style:none;
+          border:0px;
+          margin-right:10px;
+          margin-top:15px;
+          }
+          .btn3d:focus {
+          outline:medium none;
+          -moz-outline-style:none;
+          }
+          .btn3d:active {
+          top:9px;
+          }
+          .btn-spec {
+          box-shadow:0 0 0 1px #428bca inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #357ebd, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
+          background-color:#428bca;
+          }
+
+          </style>
+          <div class="">
+            <div class="row">
+                    <div class="col-md-12 text-white" class="col-md-4 p-4">
+                    <img class="browser-img" src="https://pbs.twimg.com/profile_images/721694841617297408/lqb-5CME_400x400.jpg">
+                    <img class="browser-img" src="http://irantrippers.com/images/thumbs/venus-hotel.jpg">
+                    <img class="browser-img" src="https://www.usnews.com/img/college-photo_33191_256x256mm.jpg">
+                    </div>
+
+              <div class="col-md-12 text-white" style="color: #1b486b;">
+                <h1 class="display-3 mb-4">Welcome to Smart City</h1>
+                <p class="lead mb-5">Bonjour Tourist!
+                  <br>As a tourist, you are offered a wide range of Hotel and City Information.
+                  <br>Enjoy your time in our city!
+                    
+                </p>
+                {% for city in cities %}
+                  <ul style="list-style-type: none;">
+                  <li></li><a type="button" class="btn btn-spec btn-primary btn-lg btn3d mx-1" style="background-color: #337ab7;" href="{% url 'browser:city' city.id %}"> {{ city.name }} Information</a>
+                </li>
+                </ul>
+                {% endfor %}
+                
+              </div>
+            </div>
+          </div>
         </div>
+
+        
       {% endif %}
     {% endif %}
+    {% if request.user|has_group:"Student"%}
+      {% if cities %}
+        <div class=" text-center opaque-overlay" >
+          <style type="text/css">
+          .btn3d {
+          transition:all .08s linear;
+          position:relative;
+          outline:medium none;
+          -moz-outline-style:none;
+          border:0px;
+          margin-right:10px;
+          margin-top:15px;
+          }
+          .btn3d:focus {
+          outline:medium none;
+          -moz-outline-style:none;
+          }
+          .btn3d:active {
+          top:9px;
+          }
+          .btn-spec {
+          box-shadow:0 0 0 1px #428bca inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #357ebd, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
+          background-color:#428bca;
+          }
+
+          </style>
+          <div class="">
+            <div class="row">
+                    <div class="col-md-12 text-white" class="col-md-4 p-4">
+                    <img class="browser-img" src="https://pbs.twimg.com/profile_images/721694841617297408/lqb-5CME_400x400.jpg">
+                    <img class="browser-img" src="http://irantrippers.com/images/thumbs/venus-hotel.jpg">
+                    <img class="browser-img" src="https://www.usnews.com/img/college-photo_33191_256x256mm.jpg">
+                    </div>
+
+              <div class="col-md-12 text-white" style="color: #1b486b;">
+                <h1 class="display-3 mb-4">Welcome to Smart City</h1>
+                <p class="lead mb-5">Bonjour Student!
+                  <br>As a student, you are offered a wide range of Colleges, Libraries and City Information.
+                  <br>Enjoy the city by your own way!
+                    
+                </p>
+                {% for city in cities %}
+                  <ul style="list-style-type: none;">
+                  <li></li><a type="button" class="btn btn-spec btn-primary btn-lg btn3d mx-1" style="background-color: #337ab7;" href="{% url 'browser:city' city.id %}"> {{ city.name }} Information</a>
+                </li>
+                </ul>
+                {% endfor %}
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      {% endif %}
+    {% endif %}
+
+{% if request.user|has_group:"Businessman"%}
+      {% if cities %}
+        <div class=" text-center opaque-overlay" >
+          <style type="text/css">
+          .btn3d {
+          transition:all .08s linear;
+          position:relative;
+          outline:medium none;
+          -moz-outline-style:none;
+          border:0px;
+          margin-right:10px;
+          margin-top:15px;
+          }
+          .btn3d:focus {
+          outline:medium none;
+          -moz-outline-style:none;
+          }
+          .btn3d:active {
+          top:9px;
+          }
+          .btn-spec {
+          box-shadow:0 0 0 1px #428bca inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #357ebd, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
+          background-color:#428bca;
+          }
+
+          </style>
+          <div class="">
+            <div class="row">
+                    <div class="col-md-12 text-white" class="col-md-4 p-4">
+                    <img class="browser-img" src="https://pbs.twimg.com/profile_images/721694841617297408/lqb-5CME_400x400.jpg">
+                    <img class="browser-img" src="http://irantrippers.com/images/thumbs/venus-hotel.jpg">
+                    <img class="browser-img" src="https://www.usnews.com/img/college-photo_33191_256x256mm.jpg">
+                    </div>
+
+              <div class="col-md-12 text-white" style="color: #1b486b;">
+                <h1 class="display-3 mb-4">Welcome to Smart City</h1>
+                <p class="lead mb-5">Bonjour Businessman!
+                  <br>As a businessman, you are offered a wide range of Hotels, Industries and City Information.
+                  <br>Leading the business by your own way!
+                    
+                </p>
+                {% for city in cities %}
+                  <ul style="list-style-type: none;">
+                  <li></li><a type="button" class="btn btn-spec btn-primary btn-lg btn3d mx-1" style="background-color: #337ab7;" href="{% url 'browser:city' city.id %}"> {{ city.name }} Information</a>
+                </li>
+                </ul>
+                {% endfor %}
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      {% endif %}
+    {% endif %}
+
+
+
+
+
+
 
     {% if request.user|has_group:"Businessman" or request.user|has_group:"Tourist"%}
       {% if hotels %}

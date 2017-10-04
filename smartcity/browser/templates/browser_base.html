@@ -8,7 +8,6 @@
 		<title>Smart City</title>
 		<meta charset="utf-8">
   		<meta name="viewport" content="width=device-width, initial-scale=1">
-  		<link rel="stylesheet" href="HomePage.css" type="text/css"> </head>
 		
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -27,12 +26,12 @@
 	<body>
 
   	
-	<nav class="navbar navbar-dark">
+	<nav class=" navbar-dark" style="background-color: #0990C6  ;">
 		<div class="container-fluid">
 			<!-- Logo -->
 				
-			<div class=" navbar-collapse navbar-header " class="container">
-				<a class="navbar-brand" href="/browser"><i class="fa d-inline fa-lg fa-cloud"></i><b>&nbsp;Smart City</b></a>
+			<div class=" navbar-collapse navbar-header " style="color: #FFFFFF;" class="container">
+				<a class="navbar-brand" style="color: #FFFFFF;" href="/browser"><i style="color: #FFFFFF;" class="fa d-inline fa-lg fa-cloud"></i><b>&nbsp;Smart City</b></a>
 			</div>
 
 			<div class="collapse navbar-collapse navbar-right text-center justify-content-end" id="navbar2SupportedContent">
@@ -43,7 +42,7 @@
         	</div>
 
 			<div class="collapse navbar-collapse navbar-right text-center justify-content-end" id="navbar2SupportedContent">
-        		<a class="btn navbar-btn btn-primary text-white" style="background-color: #337ab7;"><i class="fa d-inline fa-lg fa-user-circle-o"></i>&nbsp;Welcome Steve</a>
+        		<a class="btn navbar-btn btn-primary text-white" style="background-color: #337ab7;"><i class="fa d-inline fa-lg fa-user-circle-o"></i>&nbsp;Welcome {{request.user.username}}</a>
         	</div>
 
 			
@@ -58,7 +57,7 @@
 				</div>
 
 		<!-- FOOTER -->
-		<div class="py-5 bg-dark text-white">
+		<div class="py-5 text-white" style="background-color: #0990C6  ;">
     <div class="container">
       <div class="row">
         <div class="col-md-9">
@@ -69,25 +68,25 @@
             <button type="submit" class="btn btn-primary ml-3">Search</button>
           </form>
         </div>
-        <div class="col-4 col-md-1 align-self-center">
+        <div class="col-4 col-md-1 align-self-center" >
         	<p></p>
-          <a href="https://www.facebook.com" target="blank"><i class="fa fa-fw fa-facebook fa-3x text-white"></i></a>
+          <a style="color: -webkit-link;" href="https://www.facebook.com" target="blank"><i class="fa fa-fw fa-facebook fa-3x text-white"></i></a>
         </div>
         <div class="col-4 col-md-1 align-self-center">
         	<p></p>
-          <a href="https://twitter.com" target="blank"><i class="fa fa-fw fa-twitter fa-3x text-white"></i></a>
+          <a style="color: -webkit-link;" href="https://twitter.com" target="blank"><i class="fa fa-fw fa-twitter fa-3x text-white"></i></a>
         </div>
         <div class="col-4 col-md-1 align-self-center">
         	<p></p>
-          <a href="https://www.instagram.com" target="blank"><i class="fa fa-fw fa-instagram text-white fa-3x"></i></a>
+          <a style="color: -webkit-link;" href="https://www.instagram.com" target="blank"><i class="fa fa-fw fa-instagram text-white fa-3x"></i></a>
         </div>
       </div>
-      	<div class="py-5 h-25">
+      	<div class="py-5 h-25" style="background-color: #0990C6  ;">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 mt-3 text-center">
 						<p></p><br/>
-						<p id="copyright">© Copyright 2017 Smart City - All rights reserved.</p>
+						<p id="copyright" style="color: white">© Copyright 2017 Smart City - All rights reserved.</p>
 					</div>
 				</div>
 			</div>

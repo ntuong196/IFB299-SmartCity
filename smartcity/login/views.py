@@ -3,6 +3,9 @@ from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth.models import Group, User
 from login.forms import RegisterForm, ResetForm
+from django.http import HttpResponse
+from django.template import loader
+
 
 def signin(request):
     if request.method == 'POST':
