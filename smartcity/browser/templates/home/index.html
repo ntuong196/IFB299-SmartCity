@@ -2,10 +2,10 @@
 {% block content %}
 {% load static %}
 {% load user_tags %}
-<!-- 
+<!--
 <link rel="stylesheet" type="text/css" href="{% static 'browser/style.css' %}" />
  -->
- 
+
 
 <div class="container">
   <div class="row col-md-12">
@@ -48,21 +48,21 @@
                 <p class="lead mb-5">Bonjour Tourist!
                   <br>As a tourist, you are offered a wide range of Hotel and City Information.
                   <br>Enjoy your time in our city!
-                    
+
                 </p>
                 {% for city in cities %}
                   <ul style="list-style-type: none;">
-                  <li></li><a type="button" class="btn btn-spec btn-primary btn-lg btn3d mx-1" style="background-color: #337ab7;" href="{% url 'browser:city' city.id %}"> {{ city.name }} Information</a>
+                  <li></li><a type="button" class="btn btn-spec btn-primary btn-lg btn3d mx-1" style="background-color: #337ab7;" href="{% url 'browser:city' city.id %}">{{ city.name }} Information</a>
                 </li>
                 </ul>
                 {% endfor %}
-                
+
               </div>
             </div>
           </div>
         </div>
 
-        
+
       {% endif %}
     {% endif %}
     {% if request.user|has_group:"Student"%}
@@ -104,21 +104,21 @@
                 <p class="lead mb-5">Bonjour Student!
                   <br>As a student, you are offered a wide range of Colleges, Libraries and City Information.
                   <br>Enjoy the city by your own way!
-                    
+
                 </p>
                 {% for city in cities %}
                   <ul style="list-style-type: none;">
-                  <li></li><a type="button" class="btn btn-spec btn-primary btn-lg btn3d mx-1" style="background-color: #337ab7;" href="{% url 'browser:city' city.id %}"> {{ city.name }} Information</a>
+                  <li></li><a type="button" class="btn btn-spec btn-primary btn-lg btn3d mx-1" style="background-color: #337ab7;" href="{% url 'browser:city' city.id %}">{{ city.name }} Information</a>
                 </li>
                 </ul>
                 {% endfor %}
-                
+
               </div>
             </div>
           </div>
         </div>
 
-        
+
       {% endif %}
     {% endif %}
 
@@ -161,21 +161,21 @@
                 <p class="lead mb-5">Bonjour Businessman!
                   <br>As a businessman, you are offered a wide range of Hotels, Industries and City Information.
                   <br>Leading the business by your own way!
-                    
+
                 </p>
                 {% for city in cities %}
                   <ul style="list-style-type: none;">
-                  <li></li><a type="button" class="btn btn-spec btn-primary btn-lg btn3d mx-1" style="background-color: #337ab7;" href="{% url 'browser:city' city.id %}"> {{ city.name }} Information</a>
+                  <li></li><a type="button" class="btn btn-spec btn-primary btn-lg btn3d mx-1" style="background-color: #337ab7;" href="{% url 'browser:city' city.id %}">{{ city.name }} Information</a>
                 </li>
                 </ul>
                 {% endfor %}
-                
+
               </div>
             </div>
           </div>
         </div>
 
-        
+
       {% endif %}
     {% endif %}
 
