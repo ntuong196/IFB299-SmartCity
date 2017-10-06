@@ -6,6 +6,7 @@
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 
 
+
 <h2>Parks:</h2>
 {% if city.has_parks %}
   {% for park in city.park_set.all %}

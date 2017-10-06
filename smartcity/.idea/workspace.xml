@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0e99dee-eec3-4b7e-b2ee-bbac7d20daee" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HomePage/models.py" afterPath="$PROJECT_DIR$/HomePage/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/browser/templates/cities/city.html" afterPath="$PROJECT_DIR$/browser/templates/cities/city.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smartcity/settings.py" afterPath="$PROJECT_DIR$/smartcity/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,11 +17,11 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HomePage/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-364">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
@@ -31,7 +30,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HomePage/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
@@ -43,12 +42,97 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="DjangoModelDependency/#smartcity" pinned="false" current-in-tab="true">
+        <entry file="uml://DjangoModelDependency/#smartcity">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>DjangoModelDependency</ID>
+              <OriginalElement>#smartcity</OriginalElement>
+              <nodes>
+                <node x="533.0" y="146.0">browser.models.Museum</node>
+                <node x="0.0" y="494.0">browser.models.Library</node>
+                <node x="0.0" y="331.0">browser.models.Industry</node>
+                <node x="168.0" y="146.0">browser.models.Zoo</node>
+                <node x="721.0" y="146.0">browser.models.Mall</node>
+                <node x="224.0" y="331.0">browser.models.College</node>
+                <node x="336.0" y="146.0">browser.models.Restaurant</node>
+                <node x="0.0" y="146.0">browser.models.Park</node>
+                <node x="202.0" y="494.0">browser.models.Hotel</node>
+                <node x="350.0" y="0.0">browser.models.City</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="browser.models.Museum" target="browser.models.City">
+                  <point x="0.0" y="-70.0" />
+                  <point x="617.0" y="126.0" />
+                  <point x="454.3" y="126.0" />
+                  <point x="29.80000000000001" y="48.0" />
+                </edge>
+                <edge source="browser.models.Mall" target="browser.models.City">
+                  <point x="0.0" y="-70.0" />
+                  <point x="795.0" y="116.0" />
+                  <point x="484.1" y="116.0" />
+                  <point x="59.60000000000002" y="48.0" />
+                </edge>
+                <edge source="browser.models.Restaurant" target="browser.models.City">
+                  <point x="0.0" y="-70.0" />
+                  <point x="0.0" y="48.0" />
+                </edge>
+                <edge source="browser.models.Park" target="browser.models.City">
+                  <point x="0.0" y="-70.0" />
+                  <point x="74.0" y="116.0" />
+                  <point x="364.9" y="116.0" />
+                  <point x="-59.60000000000002" y="48.0" />
+                </edge>
+                <edge source="browser.models.Zoo" target="browser.models.City">
+                  <point x="0.0" y="-70.0" />
+                  <point x="242.0" y="126.0" />
+                  <point x="394.7" y="126.0" />
+                  <point x="-29.80000000000001" y="48.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="434.5" y="306.0" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Fields</Category>
+              </Categories>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/browser/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/smartcity/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="697">
               <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-              <folding />
+              <folding>
+                <marker date="1507274779941" expanded="true" signature="883:1139" ph="..." />
+                <marker date="1507274779941" expanded="true" signature="1156:1553" ph="..." />
+                <marker date="1507274779941" expanded="true" signature="1602:2092" ph="..." />
+                <marker date="1507274779941" expanded="true" signature="1608:2089" ph="..." />
+                <marker date="1507274779941" expanded="true" signature="1766:2082" ph="..." />
+                <marker date="1507274779941" expanded="true" signature="1802:2071" ph="..." />
+                <marker date="1507274779941" expanded="true" signature="2145:2220" ph="..." />
+                <marker date="1507274779941" expanded="true" signature="2235:2415" ph="..." />
+                <marker date="1507274779941" expanded="true" signature="2252:2413" ph="..." />
+                <marker date="1507274779941" expanded="true" signature="2419:2520" ph="..." />
+                <marker date="1507274779941" expanded="true" signature="2550:2944" ph="..." />
+                <marker date="1507274779941" expanded="true" signature="2556:2653" ph="..." />
+                <marker date="1507274779941" expanded="true" signature="2661:2748" ph="..." />
+                <marker date="1507274779941" expanded="true" signature="2756:2844" ph="..." />
+                <marker date="1507274779941" expanded="true" signature="2852:2941" ph="..." />
+                <marker date="1507274779941" expanded="true" signature="2948:3024" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,7 +156,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -95,6 +179,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -105,6 +190,24 @@
             <path>
               <item name="smartcity" type="b2602c69:ProjectViewProjectNode" />
               <item name="smartcity" type="462c0819:PsiDirectoryNode" />
+              <item name="browser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartcity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartcity" type="462c0819:PsiDirectoryNode" />
+              <item name="HomePage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartcity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartcity" type="462c0819:PsiDirectoryNode" />
+              <item name="HomePage" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartcity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartcity" type="462c0819:PsiDirectoryNode" />
+              <item name="HomePage" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="HomePage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -121,7 +224,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -179,19 +281,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1320" height="784" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.261347" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32937685" sideWeight="0.5092025" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5092025" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32937685" sideWeight="0.49079755" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="manage.py@smartcity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.49079755" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26150307" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.49079755" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -199,6 +299,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="manage.py@smartcity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.49079755" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -215,17 +316,79 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/HomePage/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/smartcity/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="697">
           <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-          <folding />
+          <folding>
+            <marker date="1507274779941" expanded="true" signature="883:1139" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="1156:1553" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="1602:2092" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="1608:2089" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="1766:2082" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="1802:2071" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="2145:2220" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="2235:2415" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="2252:2413" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="2419:2520" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="2550:2944" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="2556:2653" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="2661:2748" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="2756:2844" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="2852:2941" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="2948:3024" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HomePage/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="32" column="41" lean-forward="false" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartcity/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+          <folding>
+            <marker date="1507274779941" expanded="true" signature="883:1139" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="1156:1553" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="1602:2092" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="1608:2089" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="1766:2082" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="1802:2071" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="2145:2220" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="2235:2415" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="2252:2413" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="2419:2520" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="2550:2944" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="2556:2653" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="2661:2748" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="2756:2844" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="2852:2941" ph="..." />
+            <marker date="1507274779941" expanded="true" signature="2948:3024" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HomePage/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-364">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
@@ -240,6 +403,70 @@
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/browser/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DjangoModelDependency/#smartcity">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DjangoModelDependency</ID>
+          <OriginalElement>#smartcity</OriginalElement>
+          <nodes>
+            <node x="533.0" y="146.0">browser.models.Museum</node>
+            <node x="0.0" y="494.0">browser.models.Library</node>
+            <node x="0.0" y="331.0">browser.models.Industry</node>
+            <node x="168.0" y="146.0">browser.models.Zoo</node>
+            <node x="721.0" y="146.0">browser.models.Mall</node>
+            <node x="224.0" y="331.0">browser.models.College</node>
+            <node x="336.0" y="146.0">browser.models.Restaurant</node>
+            <node x="0.0" y="146.0">browser.models.Park</node>
+            <node x="202.0" y="494.0">browser.models.Hotel</node>
+            <node x="350.0" y="0.0">browser.models.City</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="browser.models.Museum" target="browser.models.City">
+              <point x="0.0" y="-70.0" />
+              <point x="617.0" y="126.0" />
+              <point x="454.3" y="126.0" />
+              <point x="29.80000000000001" y="48.0" />
+            </edge>
+            <edge source="browser.models.Mall" target="browser.models.City">
+              <point x="0.0" y="-70.0" />
+              <point x="795.0" y="116.0" />
+              <point x="484.1" y="116.0" />
+              <point x="59.60000000000002" y="48.0" />
+            </edge>
+            <edge source="browser.models.Restaurant" target="browser.models.City">
+              <point x="0.0" y="-70.0" />
+              <point x="0.0" y="48.0" />
+            </edge>
+            <edge source="browser.models.Park" target="browser.models.City">
+              <point x="0.0" y="-70.0" />
+              <point x="74.0" y="116.0" />
+              <point x="364.9" y="116.0" />
+              <point x="-59.60000000000002" y="48.0" />
+            </edge>
+            <edge source="browser.models.Zoo" target="browser.models.City">
+              <point x="0.0" y="-70.0" />
+              <point x="242.0" y="126.0" />
+              <point x="394.7" y="126.0" />
+              <point x="-29.80000000000001" y="48.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="434.5" y="306.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+          </Categories>
         </state>
       </provider>
     </entry>

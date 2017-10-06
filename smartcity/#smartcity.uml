@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DjangoModelDependency</ID>
+  <OriginalElement>#smartcity</OriginalElement>
+  <nodes>
+    <node x="533.0" y="146.0">browser.models.Museum</node>
+    <node x="0.0" y="494.0">browser.models.Library</node>
+    <node x="0.0" y="331.0">browser.models.Industry</node>
+    <node x="168.0" y="146.0">browser.models.Zoo</node>
+    <node x="721.0" y="146.0">browser.models.Mall</node>
+    <node x="224.0" y="331.0">browser.models.College</node>
+    <node x="336.0" y="146.0">browser.models.Restaurant</node>
+    <node x="0.0" y="146.0">browser.models.Park</node>
+    <node x="202.0" y="494.0">browser.models.Hotel</node>
+    <node x="350.0" y="0.0">browser.models.City</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="browser.models.Museum" target="browser.models.City">
+      <point x="0.0" y="-70.0" />
+      <point x="617.0" y="126.0" />
+      <point x="454.3" y="126.0" />
+      <point x="29.80000000000001" y="48.0" />
+    </edge>
+    <edge source="browser.models.Mall" target="browser.models.City">
+      <point x="0.0" y="-70.0" />
+      <point x="795.0" y="116.0" />
+      <point x="484.1" y="116.0" />
+      <point x="59.60000000000002" y="48.0" />
+    </edge>
+    <edge source="browser.models.Restaurant" target="browser.models.City">
+      <point x="0.0" y="-70.0" />
+      <point x="0.0" y="48.0" />
+    </edge>
+    <edge source="browser.models.Park" target="browser.models.City">
+      <point x="0.0" y="-70.0" />
+      <point x="74.0" y="116.0" />
+      <point x="364.9" y="116.0" />
+      <point x="-59.60000000000002" y="48.0" />
+    </edge>
+    <edge source="browser.models.Zoo" target="browser.models.City">
+      <point x="0.0" y="-70.0" />
+      <point x="242.0" y="126.0" />
+      <point x="394.7" y="126.0" />
+      <point x="-29.80000000000001" y="48.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="434.5" y="306.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+</Diagram>
+
