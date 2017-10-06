@@ -3,30 +3,65 @@
   <ID>DjangoModelDependency</ID>
   <OriginalElement>#smartcity</OriginalElement>
   <nodes>
-    <node x="533.0" y="146.0">browser.models.Museum</node>
-    <node x="0.0" y="494.0">browser.models.Library</node>
-    <node x="0.0" y="331.0">browser.models.Industry</node>
-    <node x="168.0" y="146.0">browser.models.Zoo</node>
-    <node x="721.0" y="146.0">browser.models.Mall</node>
-    <node x="224.0" y="331.0">browser.models.College</node>
-    <node x="336.0" y="146.0">browser.models.Restaurant</node>
-    <node x="0.0" y="146.0">browser.models.Park</node>
-    <node x="202.0" y="494.0">browser.models.Hotel</node>
-    <node x="350.0" y="0.0">browser.models.City</node>
+    <node x="336.0" y="915.0">browser.models.Restaurant</node>
+    <node x="202.0" y="1100.0">browser.models.Hotel</node>
+    <node x="721.0" y="915.0">browser.models.Zoo</node>
+    <node x="270.4564516129032" y="572.0903225806452">login.models.Profile</node>
+    <node x="423.2455113980228" y="1097.4183982247328">browser.models.Industry</node>
+    <node x="1238.3596774193547" y="11.98064516129034">HomePage.models.Entity</node>
+    <node x="202.9564516129032" y="-55.90967741935481">django.contrib.contenttypes.models.ContentType</node>
+    <node x="533.0" y="915.0">browser.models.Museum</node>
+    <node x="181.7064516129032" y="302.0903225806452">django.contrib.auth.models.Group</node>
+    <node x="168.0" y="915.0">browser.models.Park</node>
+    <node x="644.7480330845269" y="1099.9158765382288">browser.models.College</node>
+    <node x="230.9564516129032" y="112.09032258064519">django.contrib.auth.models.Permission</node>
+    <node x="1224.8596774193547" y="157.98064516129034">HomePage.models.Element</node>
+    <node x="0.0" y="1100.0">browser.models.Library</node>
+    <node x="350.0" y="769.0">browser.models.City</node>
+    <node x="248.4564516129032" y="470.0903225806452">django.contrib.auth.models.User</node>
+    <node x="0.0" y="915.0">browser.models.Mall</node>
   </nodes>
   <notes />
   <edges>
+    <edge source="django.contrib.auth.models.User" target="django.contrib.auth.models.Group">
+      <point x="-51.75" y="-26.0" />
+      <point x="300.2064516129032" y="445.0903225806452" />
+      <point x="291.7064516129032" y="445.0903225806452" />
+      <point x="0.0" y="59.0" />
+    </edge>
+    <edge source="HomePage.models.Element" target="HomePage.models.Entity">
+      <point x="0.0" y="-103.0" />
+      <point x="0.0" y="48.0" />
+    </edge>
+    <edge source="django.contrib.auth.models.User" target="django.contrib.auth.models.Permission">
+      <point x="51.75" y="-26.0" />
+      <point x="403.7064516129032" y="445.0903225806452" />
+      <point x="412.2064516129032" y="445.0903225806452" />
+      <point x="60.5" y="70.0" />
+    </edge>
+    <edge source="login.models.Profile" target="django.contrib.auth.models.User">
+      <point x="0.0" y="-48.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
     <edge source="browser.models.Museum" target="browser.models.City">
       <point x="0.0" y="-70.0" />
-      <point x="617.0" y="126.0" />
-      <point x="454.3" y="126.0" />
+      <point x="617.0" y="895.0" />
+      <point x="454.3" y="895.0" />
       <point x="29.80000000000001" y="48.0" />
     </edge>
     <edge source="browser.models.Mall" target="browser.models.City">
       <point x="0.0" y="-70.0" />
-      <point x="795.0" y="116.0" />
-      <point x="484.1" y="116.0" />
-      <point x="59.60000000000002" y="48.0" />
+      <point x="74.0" y="885.0" />
+      <point x="364.9" y="885.0" />
+      <point x="-59.60000000000002" y="48.0" />
+    </edge>
+    <edge source="django.contrib.auth.models.Group" target="django.contrib.auth.models.Permission">
+      <point x="0.0" y="-59.0" />
+      <point x="-60.5" y="70.0" />
+    </edge>
+    <edge source="django.contrib.auth.models.Permission" target="django.contrib.contenttypes.models.ContentType">
+      <point x="0.0" y="-70.0" />
+      <point x="0.0" y="59.0" />
     </edge>
     <edge source="browser.models.Restaurant" target="browser.models.City">
       <point x="0.0" y="-70.0" />
@@ -34,18 +69,18 @@
     </edge>
     <edge source="browser.models.Park" target="browser.models.City">
       <point x="0.0" y="-70.0" />
-      <point x="74.0" y="116.0" />
-      <point x="364.9" y="116.0" />
-      <point x="-59.60000000000002" y="48.0" />
+      <point x="242.0" y="895.0" />
+      <point x="394.7" y="895.0" />
+      <point x="-29.80000000000001" y="48.0" />
     </edge>
     <edge source="browser.models.Zoo" target="browser.models.City">
       <point x="0.0" y="-70.0" />
-      <point x="242.0" y="126.0" />
-      <point x="394.7" y="126.0" />
-      <point x="-29.80000000000001" y="48.0" />
+      <point x="795.0" y="885.0" />
+      <point x="484.1" y="885.0" />
+      <point x="59.60000000000002" y="48.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="434.5" y="306.0" />
+  <settings layout="Hierarchic Group" zoom="1.2008077544426499" x="446.94560357675095" y="1009.3134624937902" />
   <SelectedNodes />
   <Categories>
     <Category>Fields</Category>
