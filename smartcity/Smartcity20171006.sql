@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `smartcity` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `smartcity`;
 -- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
 --
 -- Host: localhost    Database: smartcity
@@ -119,7 +117,7 @@ CREATE TABLE `auth_user` (
   `date_joined` datetime(6) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -128,7 +126,7 @@ CREATE TABLE `auth_user` (
 
 LOCK TABLES `auth_user` WRITE;
 /*!40000 ALTER TABLE `auth_user` DISABLE KEYS */;
-INSERT INTO `auth_user` VALUES (1,'pbkdf2_sha256$30000$ebWKEQWMpJjm$254vhxxKzUJTU2vrEzIlCQpvdKtQ/kIZviSp6uWxBI0=','2017-09-07 08:13:59.543949',1,'admin','','','',1,1,'2017-09-07 08:13:21.294022'),(2,'pbkdf2_sha256$30000$lcaYFT7LlimH$ozbMH3nwWY/exMEZj21fJbzVfjtJ+HD0AilPOz08ixw=',NULL,0,'test','','','',0,1,'2017-09-07 08:17:39.069939'),(3,'pbkdf2_sha256$30000$xUyShTeLGXG5$N5mjT6asbAxw0ssxiWxQFmKIQqCXF3s8KHtLY0mfbwc=','2017-09-08 10:43:11.000000',0,'matthew','','','',0,1,'2017-09-08 10:43:11.000000'),(4,'pbkdf2_sha256$30000$BHQFb0RRl1bh$IYTXwltIcBb+F4zUP/m5GHegmMs05cvoY78aIOQzH0c=','2017-09-12 03:24:46.928681',0,'olliedog','','','',0,1,'2017-09-12 03:24:46.811573'),(5,'pbkdf2_sha256$30000$kRTIYK4A41T1$dzv0tJhb54eZzT1UuulAeLGTyGZE2ERZDxgH5IJoX1U=','2017-09-12 03:44:31.327642',1,'admin2','','','',1,1,'2017-09-12 03:44:13.657707'),(6,'pbkdf2_sha256$30000$tePGZsLS6pQJ$r4kZgApGrFhHAtnHjF/AzfpjC90FEj+Yic36dT+7MfQ=','2017-09-12 04:30:31.072246',0,'mark','','','',0,1,'2017-09-12 04:30:30.988167'),(7,'pbkdf2_sha256$30000$ugmT5uBDcknk$fXeNWAWzrtORS0ygZc5r2vWYzs9qA8sB5vaP1BD1WDU=',NULL,0,'timmy','','','',0,1,'2017-09-12 04:38:18.558615'),(8,'pbkdf2_sha256$30000$9B17LgNBu6Ba$4wQhlo+weAVFEncWcWVqQdvbXDzM66My05fy12r3VTI=',NULL,0,'timmy2','','','',0,1,'2017-09-12 04:39:58.555035'),(9,'pbkdf2_sha256$30000$tsmaKAxLW94u$MEl6qcW84Ummo6Fm9FkAcbF+jXfeKRFIfEfxKpTFvGE=','2017-09-12 04:43:06.561125',0,'timmy3','','','',0,1,'2017-09-12 04:43:06.475017'),(10,'pbkdf2_sha256$30000$WMy7mYcrfAit$lVqIFP/keHndRv9X+0z/gD0gmGNlL+URE9VEzVQepTs=','2017-09-12 04:44:15.541774',0,'jurtis111','K','dsasa','',0,1,'2017-09-12 04:44:15.431657'),(11,'pbkdf2_sha256$30000$dLruPKYnC2yj$/59lxhXZos5GtVW5vfM7wmgf/4T9Ax0/tHIHqIQe0vk=','2017-09-12 04:55:52.083684',0,'qwweeqw','qqqqww','wqreqe','',0,1,'2017-09-12 04:55:51.985553'),(12,'pbkdf2_sha256$30000$xCcRaRh76eLf$BWJRiZVWW3yF4YLRLc2wFyCCE1yat56DyZtBRc5d7l8=','2017-09-12 04:57:30.864360',0,'qwrerqew','qrqrewewr','qwqewq','',0,1,'2017-09-12 04:57:30.749252'),(13,'pbkdf2_sha256$30000$9BRs67ag7NR5$sSjBxtKjbSste2k/sTUIba02P9Sj3SFFRf3rNAqUxRM=',NULL,0,'eqwewqeqw','qqqqq','qqqqqq','qwer@qwe.com',0,1,'2017-09-12 05:27:30.005673'),(14,'pbkdf2_sha256$30000$cIgDMkZ43ld6$5OvSlHV/hAWiQvW/qLqCbvOaqCZTJkYIppF86sHn1Y0=',NULL,0,'eqwewqeqwwq','qqqqq','qqqqqq','qwer@qwe.com',0,1,'2017-09-12 05:28:28.165733'),(15,'pbkdf2_sha256$36000$Tas1B1Kszt72$/tRSS4nDpilAkX0l7mpzDktuBvlJteToxUaBxxjNKgQ=',NULL,0,'Steve','Nguyen','Nguyen','stranger0411@gmail.com',0,1,'2017-09-18 01:00:11.317784'),(16,'pbkdf2_sha256$36000$8kjNvFXfxxzR$eB052G+hwVIVA6R0Qkj2U+3mm6Z91v45xhhnTZYhirQ=',NULL,1,'admin3','','','steve@gmail.com',1,1,'2017-09-30 16:26:57.093602'),(17,'pbkdf2_sha256$36000$0PbmABYq2kKi$32stEjpL6L2aL1GzqG3j76stI9Xp+mpdtE4C03BVpTE=','2017-10-03 19:11:48.482595',1,'stran','','','stran@abc.com',1,1,'2017-10-03 07:20:14.843981'),(18,'pbkdf2_sha256$36000$ftXRitMnYavV$uRs2kbA4y81Q/8yej+4rHjeOrNZv7ZQmJAPBuYwTJJw=','2017-10-03 19:11:59.244606',0,'steve123','steveg','ádf','stranger1@gmail.com',0,1,'2017-10-03 07:56:13.255972');
+INSERT INTO `auth_user` VALUES (1,'pbkdf2_sha256$30000$ebWKEQWMpJjm$254vhxxKzUJTU2vrEzIlCQpvdKtQ/kIZviSp6uWxBI0=','2017-09-07 08:13:59.543949',1,'admin','','','',1,1,'2017-09-07 08:13:21.294022'),(17,'pbkdf2_sha256$36000$0PbmABYq2kKi$32stEjpL6L2aL1GzqG3j76stI9Xp+mpdtE4C03BVpTE=','2017-10-05 09:05:30.437489',1,'stran','','','stran@abc.com',1,1,'2017-10-03 07:20:14.843981'),(19,'pbkdf2_sha256$36000$XIbwUAa5XDUr$aVq2eV17L1oWwRQ/opZ5uU+UpAUjy/sDpLEPJvH4mhg=','2017-10-05 12:04:23.572258',0,'steve','Tuong','Nguyen','stranger0411@gmail.com',0,1,'2017-10-03 23:09:26.000000'),(20,'pbkdf2_sha256$36000$1rp04LNLrZ7W$dHT7IzmnuJKOfOxcjgg1A7BUnM/zFYAh4R5xfQh4Vbo=','2017-10-04 06:15:15.539373',0,'steven','Steven','Tuong','stranger0411@gmail.com',0,1,'2017-10-04 02:52:04.000000');
 /*!40000 ALTER TABLE `auth_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -148,7 +146,7 @@ CREATE TABLE `auth_user_groups` (
   KEY `auth_user_groups_group_id_97559544_fk_auth_group_id` (`group_id`),
   CONSTRAINT `auth_user_groups_group_id_97559544_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`),
   CONSTRAINT `auth_user_groups_user_id_6a12ed8b_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -157,7 +155,7 @@ CREATE TABLE `auth_user_groups` (
 
 LOCK TABLES `auth_user_groups` WRITE;
 /*!40000 ALTER TABLE `auth_user_groups` DISABLE KEYS */;
-INSERT INTO `auth_user_groups` VALUES (1,3,1),(2,11,2),(3,12,1),(4,18,1);
+INSERT INTO `auth_user_groups` VALUES (5,19,1),(6,20,2);
 /*!40000 ALTER TABLE `auth_user_groups` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -201,7 +199,7 @@ CREATE TABLE `browser_city` (
   `name` varchar(200) NOT NULL,
   `map` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -210,7 +208,7 @@ CREATE TABLE `browser_city` (
 
 LOCK TABLES `browser_city` WRITE;
 /*!40000 ALTER TABLE `browser_city` DISABLE KEYS */;
-INSERT INTO `browser_city` VALUES (1,'Brisbane','2016-12-13_hQL7R9S.png');
+INSERT INTO `browser_city` VALUES (1,'Brisbane','2016-12-13_hQL7R9S.png'),(2,'Sydney','');
 /*!40000 ALTER TABLE `browser_city` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -228,7 +226,7 @@ CREATE TABLE `browser_college` (
   `departments` varchar(200) NOT NULL,
   `email` varchar(70) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -237,6 +235,7 @@ CREATE TABLE `browser_college` (
 
 LOCK TABLES `browser_college` WRITE;
 /*!40000 ALTER TABLE `browser_college` DISABLE KEYS */;
+INSERT INTO `browser_college` VALUES (1,'Queensland University of Technology','2 George St., Brisbane 4000, QLD','SEF','qut@edu.au'),(2,'University of Queensland','Unknown','SEF','uq@edu.au');
 /*!40000 ALTER TABLE `browser_college` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -254,7 +253,7 @@ CREATE TABLE `browser_hotel` (
   `phone` varchar(12) NOT NULL,
   `email` varchar(70) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -263,6 +262,7 @@ CREATE TABLE `browser_hotel` (
 
 LOCK TABLES `browser_hotel` WRITE;
 /*!40000 ALTER TABLE `browser_hotel` DISABLE KEYS */;
+INSERT INTO `browser_hotel` VALUES (1,'Hotel California','12 Holliwood St, CA','012415599','calihotel@gmail.com');
 /*!40000 ALTER TABLE `browser_hotel` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -280,7 +280,7 @@ CREATE TABLE `browser_industry` (
   `industry_type` varchar(50) NOT NULL,
   `email` varchar(70) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -289,6 +289,7 @@ CREATE TABLE `browser_industry` (
 
 LOCK TABLES `browser_industry` WRITE;
 /*!40000 ALTER TABLE `browser_industry` DISABLE KEYS */;
+INSERT INTO `browser_industry` VALUES (1,'Dimension Data','163 North Quay St.','TECH','dd@gmail.com');
 /*!40000 ALTER TABLE `browser_industry` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -306,7 +307,7 @@ CREATE TABLE `browser_library` (
   `phone` varchar(12) NOT NULL,
   `email` varchar(70) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -315,6 +316,7 @@ CREATE TABLE `browser_library` (
 
 LOCK TABLES `browser_library` WRITE;
 /*!40000 ALTER TABLE `browser_library` DISABLE KEYS */;
+INSERT INTO `browser_library` VALUES (1,'Chermside','Westfield Chermside','012394185','chermsidelib@gmail.com');
 /*!40000 ALTER TABLE `browser_library` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -335,7 +337,7 @@ CREATE TABLE `browser_mall` (
   PRIMARY KEY (`id`),
   KEY `browser_mall_city_id_e22cba2b_fk_browser_city_id` (`city_id`),
   CONSTRAINT `browser_mall_city_id_e22cba2b_fk_browser_city_id` FOREIGN KEY (`city_id`) REFERENCES `browser_city` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -344,6 +346,7 @@ CREATE TABLE `browser_mall` (
 
 LOCK TABLES `browser_mall` WRITE;
 /*!40000 ALTER TABLE `browser_mall` DISABLE KEYS */;
+INSERT INTO `browser_mall` VALUES (2,'Queens Street Mall','1 Queens Street, Brisbane 4000','0124591248','awf@gmail.com',1);
 /*!40000 ALTER TABLE `browser_mall` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -364,7 +367,7 @@ CREATE TABLE `browser_museum` (
   PRIMARY KEY (`id`),
   KEY `browser_museum_city_id_bd1da589_fk_browser_city_id` (`city_id`),
   CONSTRAINT `browser_museum_city_id_bd1da589_fk_browser_city_id` FOREIGN KEY (`city_id`) REFERENCES `browser_city` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -373,6 +376,7 @@ CREATE TABLE `browser_museum` (
 
 LOCK TABLES `browser_museum` WRITE;
 /*!40000 ALTER TABLE `browser_museum` DISABLE KEYS */;
+INSERT INTO `browser_museum` VALUES (1,'Museum of Brisbane','12 Adelaide St, Brisbane 4000','410395375','MASF@gmail.com',1);
 /*!40000 ALTER TABLE `browser_museum` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -393,7 +397,7 @@ CREATE TABLE `browser_park` (
   PRIMARY KEY (`id`),
   KEY `browser_park_city_id_d2a9cb6e_fk_browser_city_id` (`city_id`),
   CONSTRAINT `browser_park_city_id_d2a9cb6e_fk_browser_city_id` FOREIGN KEY (`city_id`) REFERENCES `browser_city` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -402,6 +406,7 @@ CREATE TABLE `browser_park` (
 
 LOCK TABLES `browser_park` WRITE;
 /*!40000 ALTER TABLE `browser_park` DISABLE KEYS */;
+INSERT INTO `browser_park` VALUES (1,'Duton  Park','2/62 Heaslop Terrace','0410395375','stranger0411@gmail.com',1);
 /*!40000 ALTER TABLE `browser_park` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -451,7 +456,7 @@ CREATE TABLE `browser_zoo` (
   PRIMARY KEY (`id`),
   KEY `browser_zoo_city_id_94471bdc_fk_browser_city_id` (`city_id`),
   CONSTRAINT `browser_zoo_city_id_94471bdc_fk_browser_city_id` FOREIGN KEY (`city_id`) REFERENCES `browser_city` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -460,6 +465,7 @@ CREATE TABLE `browser_zoo` (
 
 LOCK TABLES `browser_zoo` WRITE;
 /*!40000 ALTER TABLE `browser_zoo` DISABLE KEYS */;
+INSERT INTO `browser_zoo` VALUES (1,'Queensland National Zoo','124 Dntentknow St. Burndall, 4077','14850114085','sawf@gmail.com',1);
 /*!40000 ALTER TABLE `browser_zoo` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -484,7 +490,7 @@ CREATE TABLE `django_admin_log` (
   KEY `django_admin_log_user_id_c564eba6_fk_auth_user_id` (`user_id`),
   CONSTRAINT `django_admin__content_type_id_c4bce8eb_fk_django_content_type_id` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`),
   CONSTRAINT `django_admin_log_user_id_c564eba6_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -493,7 +499,7 @@ CREATE TABLE `django_admin_log` (
 
 LOCK TABLES `django_admin_log` WRITE;
 /*!40000 ALTER TABLE `django_admin_log` DISABLE KEYS */;
-INSERT INTO `django_admin_log` VALUES (1,'2017-09-07 08:15:10.689068','1','Student',1,'[{\"added\": {}}]',4,1),(2,'2017-09-07 08:17:39.098968','2','test',1,'[{\"added\": {}}]',2,1),(3,'2017-09-12 03:45:27.161307','3','matthew',2,'[]',2,5),(4,'2017-09-12 03:47:45.467876','2','Businessman',1,'[{\"added\": {}}]',4,5),(5,'2017-09-12 03:47:51.389812','3','Tourist',1,'[{\"added\": {}}]',4,5),(6,'2017-10-03 07:21:07.683446','1','Brisbane',1,'[{\"added\": {}}]',13,17),(7,'2017-10-03 07:34:18.191318','1','Brisbane',1,'[{\"added\": {}}]',13,17),(8,'2017-10-03 08:20:04.281367','1','Brisbane',1,'[{\"added\": {}}]',11,17);
+INSERT INTO `django_admin_log` VALUES (1,'2017-09-07 08:15:10.689068','1','Student',1,'[{\"added\": {}}]',4,1),(2,'2017-09-07 08:17:39.098968','2','test',1,'[{\"added\": {}}]',2,1),(6,'2017-10-03 07:21:07.683446','1','Brisbane',1,'[{\"added\": {}}]',13,17),(7,'2017-10-03 07:34:18.191318','1','Brisbane',1,'[{\"added\": {}}]',13,17),(8,'2017-10-03 08:20:04.281367','1','Brisbane',1,'[{\"added\": {}}]',11,17),(9,'2017-10-03 23:09:10.482767','13','eqwewqeqw',3,'',2,17),(10,'2017-10-03 23:09:10.487769','14','eqwewqeqwwq',3,'',2,17),(11,'2017-10-03 23:09:10.496770','10','jurtis111',3,'',2,17),(12,'2017-10-03 23:09:10.500772','6','mark',3,'',2,17),(13,'2017-10-03 23:09:10.504775','3','matthew',3,'',2,17),(14,'2017-10-03 23:09:10.509785','4','olliedog',3,'',2,17),(15,'2017-10-03 23:09:10.512802','12','qwrerqew',3,'',2,17),(16,'2017-10-03 23:09:10.516814','11','qwweeqw',3,'',2,17),(17,'2017-10-03 23:09:10.520816','15','Steve',3,'',2,17),(18,'2017-10-03 23:09:10.524818','18','steve123',3,'',2,17),(19,'2017-10-03 23:09:10.528816','2','test',3,'',2,17),(20,'2017-10-03 23:09:10.532818','7','timmy',3,'',2,17),(21,'2017-10-03 23:09:10.536849','8','timmy2',3,'',2,17),(22,'2017-10-03 23:09:10.540967','9','timmy3',3,'',2,17),(23,'2017-10-03 23:09:26.923368','19','steve',1,'[{\"added\": {}}]',2,17),(24,'2017-10-03 23:10:29.825056','19','steve',2,'[{\"changed\": {\"fields\": [\"first_name\", \"last_name\", \"email\", \"last_login\"]}}]',2,17),(25,'2017-10-04 01:42:58.471618','2','Sydney',1,'[{\"added\": {}}]',13,17),(26,'2017-10-04 02:51:46.857522','5','admin2',3,'',2,17),(27,'2017-10-04 02:51:46.860525','16','admin3',3,'',2,17),(28,'2017-10-04 02:52:04.482165','20','steven',1,'[{\"added\": {}}]',2,17),(29,'2017-10-04 02:52:42.970617','20','steven',2,'[{\"changed\": {\"fields\": [\"first_name\", \"last_name\", \"email\", \"last_login\"]}}]',2,17),(30,'2017-10-04 06:20:06.778483','1','Queensland University of Technology',1,'[{\"added\": {}}]',21,17),(31,'2017-10-04 06:20:37.314944','2','University of Queensland',1,'[{\"added\": {}}]',21,17),(32,'2017-10-04 06:22:37.051244','1','Duton  Park',1,'[{\"added\": {}}]',17,17),(33,'2017-10-04 07:03:36.430794','1','Chermside',1,'[{\"added\": {}}]',22,17),(34,'2017-10-04 07:05:34.045992','1','Hotel California',1,'[{\"added\": {}}]',20,17),(35,'2017-10-04 07:07:08.031520','1','Dimension Data',1,'[{\"added\": {}}]',14,17),(36,'2017-10-04 07:07:58.520260','1','Museum of Brisbane',1,'[{\"added\": {}}]',15,17),(37,'2017-10-04 07:09:11.766339','1','Museum of Brisbane',1,'[{\"added\": {}}]',16,17),(38,'2017-10-04 07:10:23.580866','1','Queensland National Zoo',1,'[{\"added\": {}}]',19,17),(39,'2017-10-04 07:11:25.125634','2','Queens Street Mall',1,'[{\"added\": {}}]',15,17),(40,'2017-10-04 07:11:38.245320','1','Museum of Brisbane',3,'',15,17),(41,'2017-10-04 08:16:10.967144','3','Paris',1,'[{\"added\": {}}]',13,17),(42,'2017-10-04 08:39:50.871590','3','Paris',3,'',13,17);
 /*!40000 ALTER TABLE `django_admin_log` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -510,7 +516,7 @@ CREATE TABLE `django_content_type` (
   `model` varchar(100) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `django_content_type_app_label_76bd3d3b_uniq` (`app_label`,`model`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -519,7 +525,7 @@ CREATE TABLE `django_content_type` (
 
 LOCK TABLES `django_content_type` WRITE;
 /*!40000 ALTER TABLE `django_content_type` DISABLE KEYS */;
-INSERT INTO `django_content_type` VALUES (1,'admin','logentry'),(4,'auth','group'),(3,'auth','permission'),(2,'auth','user'),(13,'browser','city'),(20,'browser','hotel'),(14,'browser','industry'),(15,'browser','mall'),(16,'browser','museum'),(17,'browser','park'),(18,'browser','restaurant'),(19,'browser','zoo'),(5,'contenttypes','contenttype'),(9,'HomePage','choice'),(11,'HomePage','element'),(12,'HomePage','entity'),(10,'HomePage','question'),(8,'login','profile'),(6,'sessions','session'),(7,'users','userdetails');
+INSERT INTO `django_content_type` VALUES (1,'admin','logentry'),(4,'auth','group'),(3,'auth','permission'),(2,'auth','user'),(13,'browser','city'),(21,'browser','college'),(20,'browser','hotel'),(14,'browser','industry'),(22,'browser','library'),(15,'browser','mall'),(16,'browser','museum'),(17,'browser','park'),(18,'browser','restaurant'),(19,'browser','zoo'),(5,'contenttypes','contenttype'),(9,'HomePage','choice'),(11,'HomePage','element'),(12,'HomePage','entity'),(10,'HomePage','question'),(8,'login','profile'),(6,'sessions','session'),(7,'users','userdetails');
 /*!40000 ALTER TABLE `django_content_type` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -571,7 +577,7 @@ CREATE TABLE `django_session` (
 
 LOCK TABLES `django_session` WRITE;
 /*!40000 ALTER TABLE `django_session` DISABLE KEYS */;
-INSERT INTO `django_session` VALUES ('1jg4m0lgk9k6a6pozmcf4z7abq3q6rzi','MmI0ODhkOWFkOThkNGQ5MmM5NjQwOTA5M2U3ZmUyMTI5NjhiNDM2MTp7Il9hdXRoX3VzZXJfaWQiOiIxMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiMTkxMzBiMjI1ZjhjYzM4ODRjYjlhMTVjMTQ5Yzg1MzRmMDdkODQ2OSJ9','2017-09-26 04:57:30.873368'),('b3x86kncwy0rxn4e6bicrf07utpgzlyp','NjdmZGE0MzQyOGE0NGUxZmMzZTk5MjYyOTkyNjMzMWIxOTllNDgwYjp7Il9hdXRoX3VzZXJfaWQiOiIxOCIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiNTE0ZWEyOTUyYzQwYzE1Y2MwZTExMGYzMDAzNWVkNjcxZWM4N2FhOSJ9','2017-10-17 19:11:59.252611');
+INSERT INTO `django_session` VALUES ('1jg4m0lgk9k6a6pozmcf4z7abq3q6rzi','MmI0ODhkOWFkOThkNGQ5MmM5NjQwOTA5M2U3ZmUyMTI5NjhiNDM2MTp7Il9hdXRoX3VzZXJfaWQiOiIxMiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiMTkxMzBiMjI1ZjhjYzM4ODRjYjlhMTVjMTQ5Yzg1MzRmMDdkODQ2OSJ9','2017-09-26 04:57:30.873368'),('m3cchvuxvnn9vx9iqeekmm3xzuffehff','MzBiNmEyZjc4NzM3N2Y1OTg4MDU4YzBmZGY5YTBmMWUwZGJhZmZjYTp7Il9hdXRoX3VzZXJfaWQiOiIxOSIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiZmI0ZWU5ZWZiOTgzODBkYmZkNDZlZTE1ODI0NmYzZWM3ZDhmOTkwOCJ9','2017-10-19 12:04:23.580256'),('xpo0ro3ffbf44tkj40wqehxd4w9zqhfc','YWRkMTY4ZmJkNDJjMGQ1MWQ3YzE4M2U3OGIzODI4YmIzNmUyZmZmODp7Il9hdXRoX3VzZXJfaWQiOiIxNyIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiMjYyMTM2ZmU2MmI5NDhhYjZjNTNjYjczMjc1YTU0NGU3MDNiMWUzYSJ9','2017-10-17 22:51:20.409828');
 /*!40000 ALTER TABLE `django_session` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -620,7 +626,7 @@ CREATE TABLE `homepage_entity` (
   `entity_name` varchar(200) NOT NULL,
   `modify_date` datetime(6) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -648,7 +654,7 @@ CREATE TABLE `login_profile` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `user_id` (`user_id`),
   CONSTRAINT `login_profile_user_id_2714a7c6_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -657,7 +663,7 @@ CREATE TABLE `login_profile` (
 
 LOCK TABLES `login_profile` WRITE;
 /*!40000 ALTER TABLE `login_profile` DISABLE KEYS */;
-INSERT INTO `login_profile` VALUES (1,'','',16),(2,'','',17),(3,'2/62 Heaslop Terrace','410395375',18);
+INSERT INTO `login_profile` VALUES (2,'','',17),(4,'','',19),(5,'','',20);
 /*!40000 ALTER TABLE `login_profile` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -670,4 +676,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-10-04  7:06:47
+-- Dump completed on 2017-10-06 20:53:47
