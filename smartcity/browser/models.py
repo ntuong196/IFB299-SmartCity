@@ -25,6 +25,7 @@ class City(models.Model):
         return self.map != ''
 
 class College(models.Model):
+    city = models.ForeignKey(City, on_delete=models.CASCADE)
     name = models.CharField(max_length=200)
     address = models.CharField(max_length=200)
     departments = models.CharField(max_length=200)
@@ -34,6 +35,7 @@ class College(models.Model):
         return self.name
 
 class Library(models.Model):
+    city = models.ForeignKey(City, on_delete=models.CASCADE)
     name = models.CharField(max_length=200)
     address = models.CharField(max_length=200)
     phone = models.CharField(max_length=12)
@@ -43,6 +45,7 @@ class Library(models.Model):
         return self.name
 
 class Industry(models.Model):
+    city = models.ForeignKey(City, on_delete=models.CASCADE)
     TYPE_CHOICES = [
         ['MED', 'Medical'],
         ['TECH', 'Technology'],
@@ -57,6 +60,7 @@ class Industry(models.Model):
         return self.name
 
 class Hotel(models.Model):
+    city = models.ForeignKey(City, on_delete=models.CASCADE)
     name = models.CharField(max_length=200)
     address = models.CharField(max_length=200)
     phone = models.CharField(max_length=12)
@@ -66,7 +70,7 @@ class Hotel(models.Model):
         return self.name
 
 class Park(models.Model):
-    city = models.ForeignKey(City)
+    city = models.ForeignKey(City, on_delete=models.CASCADE)
     name = models.CharField(max_length=200)
     address = models.CharField(max_length=200)
     phone = models.CharField(max_length=12)
@@ -76,7 +80,7 @@ class Park(models.Model):
         return self.name
 
 class Zoo(models.Model):
-    city = models.ForeignKey(City)
+    city = models.ForeignKey(City, on_delete=models.CASCADE)
     name = models.CharField(max_length=200)
     address = models.CharField(max_length=200)
     phone = models.CharField(max_length=12)
@@ -86,7 +90,7 @@ class Zoo(models.Model):
         return self.name
 
 class Museum(models.Model):
-    city = models.ForeignKey(City)
+    city = models.ForeignKey(City, on_delete=models.CASCADE)
     name = models.CharField(max_length=200)
     address = models.CharField(max_length=200)
     phone = models.CharField(max_length=12)
@@ -96,7 +100,7 @@ class Museum(models.Model):
         return self.name
 
 class Restaurant(models.Model):
-    city = models.ForeignKey(City)
+    city = models.ForeignKey(City, on_delete=models.CASCADE)
     name = models.CharField(max_length=200)
     address = models.CharField(max_length=200)
     phone = models.CharField(max_length=12)
@@ -106,7 +110,7 @@ class Restaurant(models.Model):
         return self.name
 
 class Mall(models.Model):
-    city = models.ForeignKey(City)
+    city = models.ForeignKey(City, on_delete=models.CASCADE)
     name = models.CharField(max_length=200)
     address = models.CharField(max_length=200)
     phone = models.CharField(max_length=12)

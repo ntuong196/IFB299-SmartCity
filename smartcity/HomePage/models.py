@@ -30,7 +30,7 @@ class Element(models.Model):
    element_email = models.EmailField(max_length=200)
    element_department = models.CharField(max_length=200)
    element_industry_type = models.CharField(max_length=200)
-   rating = models.IntegerField(default=0
+   rating = models.IntegerField(default=0)
 
    def __str__(self):
        return self.element_name
